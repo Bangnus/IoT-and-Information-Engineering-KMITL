@@ -95,5 +95,3 @@ $mobile_inactive = "text-gray-300 hover:bg-gray-800 hover:text-orange-400 block 
         </div>
     </div>
 </nav>
-
-<script src="js/script.js"></script>
