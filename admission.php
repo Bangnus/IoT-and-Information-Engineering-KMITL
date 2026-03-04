@@ -53,29 +53,25 @@
           </div>
 
           <!-- Image of the TCAS schedule -->
-          <!-- <div
-            class="relative z-10 rounded-2xl overflow-hidden border border-orange-500/20 bg-white/5 p-1 backdrop-blur-sm">
-            <img src="assets/images/tcas69-calendar.png" alt="TCAS 69 Admission Schedule"
-              class="w-full h-auto rounded-xl object-contain hover:scale-[1.02] transition-transform duration-500" />
-          </div> -->
+
 
           <!-- Add to Calendar overlays / Buttons below -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 relative z-10 w-full">
             <!-- TCAS 1 Portfolio -->
             <button type="button" onclick="openModal('modal-tcas1')"
-              class="flex items-center justify-center bg-gradient-to-r from-[#0284c7] to-[#0369a1] hover:from-[#38bdf8] hover:to-[#0ea5e9] text-white font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(2,132,199,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(56,189,248,0.5)] border border-[#38bdf8]/30 w-full cursor-pointer">
+              class="flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(217,119,6,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(245,158,11,0.5)] border border-amber-500/30 w-full cursor-pointer">
               <i class="fa-regular fa-calendar-plus mr-2 text-xl"></i> แจ้งเตือน (Portfolio)
             </button>
 
             <!-- TCAS 2 Quota -->
             <button type="button" onclick="openModal('modal-tcas2')"
-              class="flex items-center justify-center bg-gradient-to-r from-[#16a34a] to-[#15803d] text-white hover:from-[#4ade80] hover:to-[#22c55e] font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(22,163,74,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(74,222,128,0.5)] border border-[#4ade80]/30 w-full cursor-pointer">
+              class="flex items-center justify-center bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-500 hover:to-orange-600 text-white font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(234,88,12,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(249,115,22,0.5)] border border-orange-500/30 w-full cursor-pointer">
               <i class="fa-regular fa-calendar-plus mr-2 text-xl"></i> แจ้งเตือน (Quota)
             </button>
 
             <!-- TCAS 3 Admission -->
             <button type="button" onclick="openModal('modal-tcas3')"
-              class="flex items-center justify-center bg-gradient-to-r from-[#be185d] to-[#9d174d] hover:from-[#f472b6] hover:to-[#ec4899] text-white font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(190,24,93,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(244,114,182,0.5)] border border-[#f472b6]/30 w-full cursor-pointer">
+              class="flex items-center justify-center bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold py-3 md:py-4 px-4 rounded-xl shadow-[0_0_15px_rgba(220,38,38,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(239,68,68,0.5)] border border-red-500/30 w-full cursor-pointer">
               <i class="fa-regular fa-calendar-plus mr-2 text-xl"></i> แจ้งเตือน (Admission)
             </button>
           </div>
