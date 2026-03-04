@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Department of IoT and Information Engineering</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- FontAwesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Removed Lucide Icons CDN as per request -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="radial-bg text-gray-200">
+  <!-- Top Info Bar -->
+  <div
+    class="flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8 text-xs text-gray-400 gap-2 md:gap-0">
+    <div class="hidden md:block font-semibold text-white text-left text-lg">
+      IoT and Information Engineering, KMITL
+    </div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="text-[14px]"><i class="fa-solid fa-location-dot mr-1 text-orange-500"></i> E-12
+        buildind</span>
+      <span class="text-[14px]"><i class="fa-solid fa-envelope mr-1 text-orange-500"></i>
+        iot@kmitl.ac.th</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <?php include 'navbar.php'; ?>
+
+  <!-- Hero Title Area -->
+  <div
+    class="relative w-full overflow-hidden flex items-center justify-center mt-10 h-[150px] sm:h-[180px] md:h-[220px] lg:h-[200px]">
+    <!-- Background Image -->
+    <img src="assets/gif/Circuit .gif" alt="Department Banner"
+      class="absolute inset-0 w-full h-full object-cover object-center blur-[2px]" />
+
+    <!-- Text Overlay Overlay -->
+    <div class="w-full absolute flex flex-col items-center justify-center px-4">
+      <div class="text-center z-10 py-6 md:py-8 px-6 md:px-32 w-full font-bold rounded-lg md:rounded-none">
+        <h1
+          class="text-xl sm:text-xl md:text-2xl lg:text-4xl text-white tracking-wider md:tracking-widest mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          Department of IoT and Information Engineering
+        </h1>
+        <h2
+          class="text-base text-center sm:text-lg md:text-xl lg:text-3xl text-white mt-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]">
+          ภาควิชาวิศวกรรมไอโอทีและสารสนเทศ
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Stats/Icon Boxes -->
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+    <div data-aos="fade-up"
+      class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
+      <div class="bg-orange-600/20 p-4 rounded-full mb-4">
+        <i class="fa-solid fa-graduation-cap text-3xl text-orange-500"></i>
+      </div>
+      <p class="text-sm font-semibold text-white mb-2 leading-tight">
+        Bachelor of Engineering<br /><span class="text-xs text-orange-300 font-normal">(IoT System and
+          Information)</span>
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-2 border-t border-gray-800/50 w-full">
+        ปริญญาตรี วิศวกรรมศาสตรบัณฑิต<br />(วิศวกรรมไอโอทีและสารสนเทศ)
+      </p>
+    </div>
+
+    <div
+      class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
+      <div class="bg-orange-600/20 p-4 rounded-full mb-4">
+        <i class="fa-solid fa-chart-column text-3xl text-orange-400"></i>
+      </div>
+      <p class="text-sm font-semibold text-white mb-2 leading-tight">
+        Dual Degree<br /><span class="text-xs text-orange-300 font-normal">(B.Eng. IoT & B.Sc. Physics)</span>
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-2 border-t border-gray-800/50 w-full">
+        วท.บ. ฟิสิกส์อุตสาหกรรม และ<br />วศ.บ. วิศวกรรมระบบไอโอทีและสารสนเทศ
+      </p>
+    </div>
+
+    <div
+      class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
+      <div class="bg-orange-600/20 p-4 rounded-full mb-4">
+        <i class="fa-solid fa-microchip text-3xl text-orange-400"></i>
+      </div>
+      <p class="text-sm font-semibold text-white mb-2 leading-tight">
+        Bachelor of Engineering<br /><span class="text-xs text-orange-300 font-normal">(Computer and IoT)</span>
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-2 border-t border-gray-800/50 w-full">
+        ปริญญาตรี วิศวกรรมศาสตรบัณฑิต<br />(คอมพิวเตอร์และไอโอที)
+        หลักสูตรต่อเนื่อง
+      </p>
+    </div>
+
+    <div
+      class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
+      <div class="bg-orange-600/20 p-4 rounded-full mb-4">
+        <i class="fa-solid fa-industry text-3xl text-orange-400"></i>
+      </div>
+      <p class="text-sm font-semibold text-white mb-2 leading-tight">
+        Master & Ph.D.<br /><span class="text-xs text-orange-300 font-normal">(AIoT and Information)</span>
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-2 border-t border-gray-800/50 w-full">
+        ป.โท และ ป.เอก<br />(เอไอโอทีและสารสนเทศ)
+      </p>
+    </div>
+  </div>
+
+  <!-- Banner Info -->
+  <div
+    class="max-w-5xl mx-auto mt-12 flex flex-col md:flex-row rounded-xl overflow-hidden shadow-2xl bg-white min-h-[16rem] mx-4 lg:mx-auto">
+    <div
+      class="w-full md:w-1/2 bg-primary flex flex-col items-center justify-center p-8 md:p-12 text-center order-2 md:order-1">
+      <p class="text-white text-2xl md:text-3xl font-bold mb-3 leading-tight drop-shadow-sm">
+        About us <br class="hidden md:block" />IoT System and Information
+        Engineering
+      </p>
+      <p class="text-white/90 text-sm md:text-base font-medium mb-6">
+        วิศวกรรมไอโอทีและสารสนเทศ รับสมัครนักศึกษาประจำปี 2569
+      </p>
+      <a target="_blank" href="http://admission.reg.kmitl.ac.th/"
+        class="bg-white text-primary px-6 py-2.5 rounded-full font-bold text-sm hover:bg-orange-50 hover:scale-105 transition-all shadow-md inline-block">
+        สมัครเรียนคลิกเลย
+      </a>
+    </div>
+    <div class="w-full md:w-1/2 h-[200px] md:h-auto border-l-0 md:border-l-4 border-orange-400 order-1 md:order-2">
+      <img src="assets/images/iot.jpeg" alt="IoT Engineering Admission" class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <div class="max-w-4xl mx-auto mt-16 px-4">
+    <div
+      class="border-4 border-orange-500/30 rounded-lg overflow-hidden relative shadow-[0_0_20px_rgba(234,88,12,0.2)] md:shadow-[0_0_30px_rgba(234,88,12,0.3)] w-full aspect-video bg-black">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/nR2hj3xhLNA?si=5o3s2K3JbX9lO5nE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Large Divider Banner -->
+  <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4">
+    <div class="bg-orange-gradient text-center py-4 md:py-6 px-2 rounded-lg shadow-lg border border-orange-500/30">
+      <h2 class="text-base sm:text-xl md:text-3xl font-bold tracking-widest md:tracking-[0.2em] text-shadow text-white">
+        INTERNET OF THING AND INFORMATION
+      </h2>
+    </div>
+  </div>
+
+  <!-- Middle Features Grid -->
+  <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Text Box 1 -->
+    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-1">
+      <i class="fa-solid fa-users text-5xl mb-4 text-white drop-shadow"></i>
+      <h3 class="font-bold text-xl text-orange-400 mb-2">กิจกรรมโดดเด่น</h3>
+      <p class="text-sm md:text-base text-gray-300">
+        ภาควิชาของเราจัดกิจกรรมพิเศษตลอดทั้งปี เช่น
+        ค่ายมัธยมและเวิร์กช็อปเพื่อพัฒนาทักษะในด้าน IoT และนวัตกรรม
+      </p>
+    </div>
+    <!-- Text Box 2 -->
+    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-2">
+      <i class="fa-solid fa-lightbulb text-5xl mb-4 text-white drop-shadow"></i>
+      <h3 class="font-bold text-xl text-orange-400 mb-2">โครงการเด่น</h3>
+      <p class="text-sm md:text-base text-gray-300">
+        ร่วมเป็นส่วนหนึ่งในโครงการที่ขับเคลื่อนนวัตกรรม เช่น
+        ระบบอัจฉริยะสำหรับการเกษตรและ การพัฒนา Smart City
+      </p>
+    </div>
+    <!-- Image Box 1 -->
+    <div class="rounded-xl overflow-hidden shadow-lg order-3 h-48 md:h-auto">
+      <img src="assets/gif/electtronic2.gif" alt="electronic"
+        class="w-full h-full object-cover min-h-0 md:min-h-[180px]" />
+    </div>
+    <!-- Text Box 3 -->
+    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-4">
+      <i class="fa-solid fa-chalkboard-user text-5xl mb-4 text-white drop-shadow"></i>
+      <h3 class="font-bold text-xl text-orange-400 mb-2">
+        อาจารย์ผู้เชี่ยวชาญ
+      </h3>
+      <p class="text-sm md:text-base text-gray-300">
+        เรียนรู้จากทีมอาจารย์ผู้เชี่ยวชาญ ในหลากหลายสาขาพร้อมด้วยงาน
+        วิจัยระดับแนวหน้าที่ได้รับการยอมรับ
+      </p>
+    </div>
+    <!-- Text Box 4 -->
+    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-5">
+      <i class="fa-regular fa-compass text-5xl mb-4 text-white drop-shadow"></i>
+      <h3 class="font-bold text-xl text-orange-400 mb-2">
+        โอกาสที่ไม่มีที่สิ้นสุด
+      </h3>
+      <p class="text-sm md:text-base text-gray-300">
+        สร้างโอกาสใหม่ ๆ ผ่านเครือข่ายของเรา ทั้งในด้านการศึกษา การวิจัย
+        และการฝึกงานในอุตสาหกรรมจริง
+      </p>
+    </div>
+    <!-- Image Box 2 -->
+    <div class="rounded-xl overflow-hidden shadow-lg border border-gray-800 order-6 h-48 md:h-auto">
+      <img src="assets/gif/electronic1.gif" alt="electronic"
+        class="w-full h-full object-cover min-h-0 md:min-h-[180px]" />
+    </div>
+  </div>
+
+  <!-- More From Community Section -->
+  <div class="mt-16 md:mt-24">
+    <h2 class="text-center text-md sm:text-3xl font-bold mb-8 md:mb-12 tracking-widest text-white drop-shadow px-4">
+      MORE FROM THE IoT COMMUNITY
+    </h2>
+
+    <div data-aos="fade-up" class="max-w-4xl mx-auto px-4 flex flex-col gap-6 md:gap-8">
+      <!-- News Card 1 -->
+      <div
+        class="flex flex-col md:flex-row min-h-[auto] rounded-xl overflow-hidden bg-orange-800/80 hover:bg-orange-700/80 transition shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-orange-900/50 items-stretch">
+        <div class="w-full md:w-5/12 h-56 md:h-auto relative shrink-0">
+          <img src="assets/images/image 3.png" alt="image" class="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div class="w-full md:w-7/12 p-6 md:p-8 flex flex-col justify-center items-center text-center">
+          <h3 class="font-bold text-lg mb-2 md:mb-3 text-white">
+            Measurement Multimeter
+          </h3>
+          <p class="text-sm text-gray-300 md:text-gray-200 mb-5 md:mb-6 px-2 md:px-6 line-clamp-3 md:line-clamp-2">
+            อุปกรณ์วัดค่าที่สามารถวัดค่าได้หลากหลาย
+            ตั้งแต่อุณหภูมิไปจนถึงปริมาณแก๊ส LPG ในรูปแบบที่ไม่เหมือนใคร
+          </p>
+          <a href="measurement-multimeter.html"
+            class="bg-gray-200 text-black px-8 py-2 md:py-2.5 text-xs md:text-sm font-bold rounded-md hover:bg-white hover:shadow-lg hover:scale-105 transition-all w-max cursor-pointer">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- News Card 2 -->
+      <div
+        class="flex flex-col md:flex-row min-h-[auto] rounded-xl overflow-hidden bg-orange-800/80 hover:bg-orange-700/80 transition shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-orange-900/50 items-stretch">
+        <div class="w-full md:w-5/12 h-56 md:h-auto relative shrink-0">
+          <img src="assets/images/image 2.png" alt="image" class="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div class="w-full md:w-7/12 p-6 md:p-8 flex flex-col justify-center items-center text-center">
+          <h3 class="font-bold text-lg mb-2 md:mb-3 text-white">
+            Automatic Blending Machine
+          </h3>
+          <p class="text-sm text-gray-300 md:text-gray-200 mb-5 md:mb-6 px-2 md:px-6 line-clamp-3 md:line-clamp-2">
+            เมื่อเครื่องดื่มของคุณ จะคงความอร่อยได้ทุกครั้งทุกที่ทุกเวลา
+          </p>
+          <a href="automatic-blending-machine.html"
+            class="bg-gray-200 text-black px-8 py-2 md:py-2.5 text-xs md:text-sm font-bold rounded-md hover:bg-white hover:shadow-lg hover:scale-105 transition-all w-max cursor-pointer">
+            READ MORE
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div
+    class="max-w-6xl mx-auto mt-16 md:mt-24 mb-16 md:mb-24 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 4.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 5.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 6.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 7.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 8.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 9.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 10.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 11.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+    <div
+      class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
+      <img src="assets/images/image 12.png"
+        class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+        alt="Gallery" />
+    </div>
+  </div>
+
+  <!-- Scroll to Top Icon -->
+  <div class="flex justify-center items-center mb-10 animate-bounce">
+    <a href="#" id="scrollToTopBtn"
+      class="flex items-center justify-center w-12 h-12 bg-orange-600 hover:bg-orange-500 text-white rounded-full shadow-lg hover:shadow-orange-500/50 transition-all hover:-translate-y-1"
+      aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up text-xl"></i>
+    </a>
+  </div>
+
+  <!-- Footer Area -->
+  <?php include 'footer.php'; ?>
+
+
+  <!-- Floating Action Button -->
+  <?php include 'floating-btn.php'; ?>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

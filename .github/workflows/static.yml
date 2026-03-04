@@ -1,0 +1,80 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+
+      - name: Build Static Site
+        run: |
+          mkdir dist
+
+          # Loop through all PHP files
+          for file in *.php; do
+            # Skip include components and utility scripts
+            if [[ "$file" == "navbar.php" || "$file" == "footer.php" || "$file" == "floating-btn.php" || "$file" == "calendar-modals.php" || "$file" == "replace-footer.php" || "$file" == "append-btn.php" ]]; then
+              continue
+            fi
+            
+            html_file="dist/${file%.php}.html"
+            
+            # Execute PHP and render HTML output
+            php "$file" > "$html_file"
+            
+            # Replace internal .php links with .html
+            sed -i -E 's/href="([^"]+)\.php([^"]*)"/href="\1.html\2"/g' "$html_file"
+          done
+
+          # Rename js script chat routing from chat.php to chat.html if necessary
+          if [ -d "js" ]; then
+             sed -i 's/chat\.php/chat\.html/g' js/script.js 2>/dev/null || true
+          fi
+
+          # Copy assets, CSS, JS to dist
+          cp -r assets dist/ 2>/dev/null || true
+          cp -r css dist/ 2>/dev/null || true
+          cp -r js dist/ 2>/dev/null || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist"
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
