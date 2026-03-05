@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="css/style.css" />
   <!-- Tailwind CSS v4 CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <!-- Removed Lucide Icons CDN as per request -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -51,6 +51,37 @@
           ภาควิชาวิศวกรรมไอโอทีและสารสนเทศ
         </h2>
       </div>
+    </div>
+  </div>
+
+  <!-- Swiper Gallery Top (Auto Slide) -->
+  <div class="max-w-2xl mx-auto px-4 mt-6 md:mt-10 mb-8 md:mb-12">
+    <div class="swiper mySwiper w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/image 4.png" class="w-full h-full object-cover"
+            alt="Gallery 1" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 5.png" class="w-full h-full object-cover"
+            alt="Gallery 2" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 6.png" class="w-full h-full object-cover"
+            alt="Gallery 3" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 7.png" class="w-full h-full object-cover"
+            alt="Gallery 4" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 8.png" class="w-full h-full object-cover"
+            alt="Gallery 5" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 9.png" class="w-full h-full object-cover"
+            alt="Gallery 6" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 10.png" class="w-full h-full object-cover"
+            alt="Gallery 7" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 11.png" class="w-full h-full object-cover"
+            alt="Gallery 8" /></div>
+        <div class="swiper-slide"><img src="assets/images/image 12.png" class="w-full h-full object-cover"
+            alt="Gallery 9" /></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next text-orange-500 after:text-2xl drop-shadow-md"></div>
+      <div class="swiper-button-prev text-orange-500 after:text-2xl drop-shadow-md"></div>
     </div>
   </div>
 
@@ -146,12 +177,14 @@
 
   <!-- Large Divider Banner -->
   <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4">
-    <div class="bg-orange-gradient text-center py-4 md:py-6 px-2 rounded-lg shadow-lg border border-orange-500/30">
+    <div
+      class="bg-orange-gradient text-center py-4 md:py-6 px-2 rounded-lg shadow-lg border border-orange-500/30 mb-12">
       <h2 class="text-base sm:text-xl md:text-3xl font-bold tracking-widest md:tracking-[0.2em] text-shadow text-white">
         INTERNET OF THING AND INFORMATION
       </h2>
     </div>
   </div>
+
 
   <!-- Middle Features Grid -->
   <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -333,9 +366,32 @@
   <?php include 'floating-btn.php'; ?>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- SwiperJS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script>
     AOS.init();
+
+    // Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      effect: "fade", // Optional: adds a nice fading effect between slides
+    });
   </script>
 </body>
 
