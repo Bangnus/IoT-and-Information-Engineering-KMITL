@@ -266,10 +266,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function findBestMatch(query) {
-    const words = query
-      .toLowerCase()
-      .split(" ")
-      .filter((w) => w.length > 2);
+    // Basic cleanup
+    const cleanQuery = query.toLowerCase().trim();
+    if (!cleanQuery)
+      return "ขออภัยครับ คำถามเฉพาะทางนี้ผมยังไม่แน่ใจ รบกวนเลือกจากหัวข้อที่ผมเตรียมไว้ หรือลองเปลี่ยนคำค้นหาดูนะครับ 🙇‍♂️";
+
     let bestMatch = null;
     let maxScore = 0;
 
@@ -277,24 +278,55 @@ document.addEventListener("DOMContentLoaded", async () => {
       const item = dataset[i];
       const input = item.input.toLowerCase();
 
-      if (input === query.toLowerCase()) {
+      // 1. Exact match is always best
+      if (input === cleanQuery) {
         return item.output;
       }
 
       let score = 0;
-      for (let w of words) {
-        if (input.includes(w)) score++;
+
+      // 2. Direct substring match (Query is inside Input)
+      if (input.includes(cleanQuery)) {
+        score += 20;
       }
 
+      // 3. Direct substring match (Input is inside Query)
+      if (cleanQuery.includes(input)) {
+        score += 15;
+      }
+
+      // 4. Character overlap matching (Fuzzy logic for Thai)
+      // Break both into chunks of 3 characters (n-grams) to find similarities without spaces
+      const n = 3;
+      const queryGrams = [];
+      for (let j = 0; j <= cleanQuery.length - n; j++) {
+        queryGrams.push(cleanQuery.substring(j, j + n));
+      }
+
+      let gramScore = 0;
+      for (const gram of queryGrams) {
+        if (input.includes(gram)) {
+          gramScore += 1;
+        }
+      }
+
+      // Weight the gram score based on how much of the query it covers
+      if (queryGrams.length > 0) {
+        score += (gramScore / queryGrams.length) * 10;
+      }
+
+      // Keep track of the highest score
       if (score > maxScore) {
         maxScore = score;
         bestMatch = item;
       }
     }
 
-    if (bestMatch && maxScore > 0) {
+    // Threshold to prevent completely unrelated answers
+    if (bestMatch && maxScore > 3) {
       return bestMatch.output;
     }
+
     return "ขออภัยครับ คำถามเฉพาะทางนี้ผมยังไม่แน่ใจ รบกวนเลือกจากหัวข้อที่ผมเตรียมไว้ หรือลองเปลี่ยนคำค้นหาดูนะครับ 🙇‍♂️";
   }
 

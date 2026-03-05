@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -34,7 +36,8 @@
   <main class="w-full py-12 md:py-16 min-h-[50vh]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-4">
       <!-- 1. IoT Program Overview -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
         <summary
           class="bg-gradient-to-r from-[#d26b32] to-[#c26224] hover:from-[#e47636] hover:to-[#d26b32] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center shadow-lg transition-all cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -81,7 +84,8 @@
       </details>
 
       <!-- 2. เอกสารหลักสูตร IoT -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
         <summary
           class="bg-gradient-to-r from-[#d26b32] to-[#c26224] hover:from-[#e47636] hover:to-[#d26b32] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center shadow-lg transition-all cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -142,7 +146,8 @@
       </details>
 
       <!-- 3. แผนการศึกษา IoT -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#1a0e0a]">
         <summary
           class="bg-gradient-to-r from-[#d26b32] to-[#c26224] hover:from-[#e47636] hover:to-[#d26b32] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center shadow-lg transition-all cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -158,7 +163,8 @@
       <div class="my-4"></div>
 
       <!-- 4. Dual Degree Overview -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
         <summary
           class="bg-gradient-to-r from-[#d26b32] to-[#c26224] hover:from-[#e47636] hover:to-[#d26b32] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center shadow-lg transition-all cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -234,7 +240,8 @@
       </details>
 
       <!-- 5. สองปริญญาคืออะไร ? -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
         <summary
           class="bg-[#e47636] hover:bg-[#c66228] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center transition-colors cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -318,7 +325,8 @@
       </details>
 
       <!-- 6. รายละเอียดหลักสูตร -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
         <summary
           class="bg-[#e47636] hover:bg-[#c66228] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center transition-colors cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -383,7 +391,8 @@
       </details>
 
       <!-- 7. ข้อมูลสรุปหลักสูตร -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
         <summary
           class="bg-[#e47636] hover:bg-[#c66228] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center transition-colors cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -399,7 +408,8 @@
       </details>
 
       <!-- 8. แผนการเรียน Dual Degree -->
-      <details class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
+      <details data-aos="fade-up" data-aos-duration="800"
+        class="group rounded-lg overflow-hidden border border-orange-600/50 shadow-xl bg-[#140804]">
         <summary
           class="bg-[#e47636] hover:bg-[#c66228] text-white font-bold text-sm md:text-base py-4 px-6 flex items-center transition-colors cursor-pointer list-none select-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:-rotate-180"></i>
@@ -420,6 +430,7 @@
   <!-- Floating Action Button -->
   <?php include 'floating-btn.php'; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 

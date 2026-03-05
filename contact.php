@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -34,7 +36,7 @@
   <main class="w-full py-12 md:py-24 min-h-[60vh] flex flex-col items-center">
     <div class="max-w-5xl w-full px-4 sm:px-6 lg:px-8 space-y-12">
       <!-- Contact Block 1: IoT -->
-      <div
+      <div data-aos="fade-up" data-aos-duration="1000"
         class="w-full rounded-b-xl border border-[#d26b32]/30 shadow-[0_0_20px_rgba(210,107,50,0.15)] bg-[#0d0705] overflow-hidden">
         <!-- Contact Header -->
         <div class="bg-orange-gradient py-4 md:py-4 text-center shadow-md rounded-t-xl">
@@ -98,7 +100,7 @@
       </div>
 
       <!-- Contact Block 2: Industrial Physics -->
-      <div
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
         class="w-full rounded-xl border border-[#d26b32]/40 shadow-[0_0_20px_rgba(210,107,50,0.15)] bg-[#0d0705] overflow-hidden">
         <div class="p-8 md:p-12 lg:p-16 text-center flex flex-col items-center">
           <h2
@@ -161,6 +163,7 @@
   <!-- Floating Action Button -->
   <?php include 'floating-btn.php'; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
   <script>
     // Make sure contact is active in mobile menu as well

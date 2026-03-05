@@ -167,3 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// AOS
+AOS.init();

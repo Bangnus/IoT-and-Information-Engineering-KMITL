@@ -11,6 +11,8 @@
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Removed Lucide Icons CDN as per request -->
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -34,7 +36,8 @@
   <!-- Main Content for Faculty -->
   <main class="w-full pb-24 min-h-[70vh] flex flex-col items-center">
     <!-- Top Banner Full Width -->
-    <div class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-16">
+    <div 
+      class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-16">
       <h1 class="text-2xl md:text-3xl font-bold text-white drop-shadow-md tracking-wider">
         Faculty
       </h1>
@@ -44,7 +47,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full">
         <!-- IoT Card -->
-        <a href="iot-faculty-member.php"
+        <a href="iot-faculty-member.php" data-aos="fade-right" data-aos-duration="1000"
           class="relative flex flex-col justify-center items-center w-full min-h-[300px] bg-gradient-to-br from-black/80 to-[#1a0a04] backdrop-blur-xl border border-orange-500/20 rounded-3xl p-8 hover:border-orange-500/80 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(234,88,12,0.4)] hover:-translate-y-2 group overflow-hidden">
           <!-- Background Glow FX -->
           <div
@@ -70,7 +73,7 @@
         </a>
 
         <!-- Physics Card -->
-        <a href="physics-faculty-member.php"
+        <a href="physics-faculty-member.php" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100"
           class="relative flex flex-col justify-center items-center w-full min-h-[300px] bg-gradient-to-br from-black/80 to-[#1a0a04] backdrop-blur-xl border border-orange-500/20 rounded-3xl p-8 hover:border-orange-500/80 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(234,88,12,0.4)] hover:-translate-y-2 group overflow-hidden">
           <!-- Background Glow FX -->
           <div
@@ -105,6 +108,7 @@
   <!-- Floating Action Button -->
   <?php include 'floating-btn.php'; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 

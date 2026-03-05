@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -33,7 +35,7 @@
   <?php include 'navbar.php'; ?>
 
   <!-- Hero Title Area -->
-  <div
+  <div data-aos="fade-in" data-aos-duration="1500"
     class="relative w-full overflow-hidden flex items-center justify-center mt-10 h-[150px] sm:h-[180px] md:h-[220px] lg:h-[200px]">
     <!-- Background Image -->
     <img src="assets/gif/Circuit .gif" alt="Department Banner"
@@ -55,7 +57,7 @@
   </div>
 
   <!-- Swiper Gallery Top (Auto Slide) -->
-  <div class="max-w-2xl mx-auto px-4 mt-6 md:mt-10 mb-8 md:mb-12">
+  <div data-aos="fade-in" data-aos-duration="1200" class="max-w-2xl mx-auto px-4 mt-6 md:mt-10 mb-8 md:mb-12">
     <div class="swiper mySwiper w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/image 4.png" class="w-full h-full object-cover"
@@ -87,7 +89,7 @@
 
   <!-- 4 Stats/Icon Boxes -->
   <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-    <div data-aos="fade-up"
+    <div data-aos="fade-up" data-aos-delay="100"
       class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
       <div class="bg-orange-600/20 p-4 rounded-full mb-4">
         <i class="fa-solid fa-graduation-cap text-3xl text-orange-500"></i>
@@ -101,7 +103,7 @@
       </p>
     </div>
 
-    <div
+    <div data-aos="fade-up" data-aos-delay="200"
       class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
       <div class="bg-orange-600/20 p-4 rounded-full mb-4">
         <i class="fa-solid fa-chart-column text-3xl text-orange-400"></i>
@@ -114,7 +116,7 @@
       </p>
     </div>
 
-    <div
+    <div data-aos="fade-up" data-aos-delay="300"
       class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
       <div class="bg-orange-600/20 p-4 rounded-full mb-4">
         <i class="fa-solid fa-microchip text-3xl text-orange-400"></i>
@@ -128,7 +130,7 @@
       </p>
     </div>
 
-    <div
+    <div data-aos="fade-up" data-aos-delay="400"
       class="border-orange-glow rounded-xl p-6 text-center flex flex-col items-center justify-start min-h-[160px] hover:-translate-y-1 transition-transform duration-300">
       <div class="bg-orange-600/20 p-4 rounded-full mb-4">
         <i class="fa-solid fa-industry text-3xl text-orange-400"></i>
@@ -143,7 +145,7 @@
   </div>
 
   <!-- Banner Info -->
-  <div
+  <div data-aos="fade-up" data-aos-duration="1000"
     class="max-w-5xl mx-auto mt-12 flex flex-col md:flex-row rounded-xl overflow-hidden shadow-2xl bg-white min-h-[16rem] mx-4 lg:mx-auto">
     <div
       class="w-full md:w-1/2 bg-primary flex flex-col items-center justify-center p-8 md:p-12 text-center order-2 md:order-1">
@@ -165,7 +167,7 @@
   </div>
 
   <!-- Video Section -->
-  <div class="max-w-4xl mx-auto mt-16 px-4">
+  <div data-aos="zoom-in" data-aos-duration="1000" class="max-w-4xl mx-auto mt-16 px-4">
     <div
       class="border-4 border-orange-500/30 rounded-lg overflow-hidden relative shadow-[0_0_20px_rgba(234,88,12,0.2)] md:shadow-[0_0_30px_rgba(234,88,12,0.3)] w-full aspect-video bg-black">
       <iframe class="w-full h-full" src="https://www.youtube.com/embed/nR2hj3xhLNA?si=5o3s2K3JbX9lO5nE"
@@ -176,7 +178,7 @@
   </div>
 
   <!-- Large Divider Banner -->
-  <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4">
+  <div data-aos="flip-up" class="max-w-6xl mx-auto mt-12 md:mt-16 px-4">
     <div
       class="bg-orange-gradient text-center py-4 md:py-6 px-2 rounded-lg shadow-lg border border-orange-500/30 mb-12">
       <h2 class="text-base sm:text-xl md:text-3xl font-bold tracking-widest md:tracking-[0.2em] text-shadow text-white">
@@ -189,7 +191,8 @@
   <!-- Middle Features Grid -->
   <div class="max-w-6xl mx-auto mt-12 md:mt-16 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
     <!-- Text Box 1 -->
-    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-1">
+    <div data-aos="fade-right" data-aos-delay="100"
+      class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-1">
       <i class="fa-solid fa-users text-5xl mb-4 text-white drop-shadow"></i>
       <h3 class="font-bold text-xl text-orange-400 mb-2">กิจกรรมโดดเด่น</h3>
       <p class="text-sm md:text-base text-gray-300">
@@ -198,7 +201,8 @@
       </p>
     </div>
     <!-- Text Box 2 -->
-    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-2">
+    <div data-aos="fade-left" data-aos-delay="200"
+      class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-2">
       <i class="fa-solid fa-lightbulb text-5xl mb-4 text-white drop-shadow"></i>
       <h3 class="font-bold text-xl text-orange-400 mb-2">โครงการเด่น</h3>
       <p class="text-sm md:text-base text-gray-300">
@@ -207,12 +211,13 @@
       </p>
     </div>
     <!-- Image Box 1 -->
-    <div class="rounded-xl overflow-hidden shadow-lg order-3 h-48 md:h-auto">
+    <div data-aos="zoom-in" data-aos-delay="300" class="rounded-xl overflow-hidden shadow-lg order-3 h-48 md:h-auto">
       <img src="assets/gif/electtronic2.gif" alt="electronic"
         class="w-full h-full object-cover min-h-0 md:min-h-[180px]" />
     </div>
     <!-- Text Box 3 -->
-    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-4">
+    <div data-aos="fade-up" data-aos-delay="400"
+      class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-4">
       <i class="fa-solid fa-chalkboard-user text-5xl mb-4 text-white drop-shadow"></i>
       <h3 class="font-bold text-xl text-orange-400 mb-2">
         อาจารย์ผู้เชี่ยวชาญ
@@ -223,7 +228,8 @@
       </p>
     </div>
     <!-- Text Box 4 -->
-    <div class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-5">
+    <div data-aos="fade-up" data-aos-delay="500"
+      class="border-orange-glow rounded-xl p-8 flex flex-col items-center justify-start text-center order-5">
       <i class="fa-regular fa-compass text-5xl mb-4 text-white drop-shadow"></i>
       <h3 class="font-bold text-xl text-orange-400 mb-2">
         โอกาสที่ไม่มีที่สิ้นสุด
@@ -234,7 +240,8 @@
       </p>
     </div>
     <!-- Image Box 2 -->
-    <div class="rounded-xl overflow-hidden shadow-lg border border-gray-800 order-6 h-48 md:h-auto">
+    <div data-aos="zoom-in" data-aos-delay="600"
+      class="rounded-xl overflow-hidden shadow-lg border border-gray-800 order-6 h-48 md:h-auto">
       <img src="assets/gif/electronic1.gif" alt="electronic"
         class="w-full h-full object-cover min-h-0 md:min-h-[180px]" />
     </div>
@@ -291,7 +298,7 @@
   </div>
 
   <!-- Gallery Grid -->
-  <div
+  <!-- <div
     class="max-w-6xl mx-auto mt-16 md:mt-24 mb-16 md:mb-24 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
     <div
       class="overflow-hidden rounded-lg shadow-md hover:shadow-orange-900/40 hover:shadow-xl transition-shadow group">
@@ -347,10 +354,10 @@
         class="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
         alt="Gallery" />
     </div>
-  </div>
+  </div> -->
 
   <!-- Scroll to Top Icon -->
-  <div class="flex justify-center items-center mb-10 animate-bounce">
+  <div class="flex justify-center items-center mb-10 mt-10 animate-bounce">
     <a href="#" id="scrollToTopBtn"
       class="flex items-center justify-center w-12 h-12 bg-orange-600 hover:bg-orange-500 text-white rounded-full shadow-lg hover:shadow-orange-500/50 transition-all hover:-translate-y-1"
       aria-label="Scroll to top">
@@ -364,14 +371,12 @@
 
   <!-- Floating Action Button -->
   <?php include 'floating-btn.php'; ?>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- SwiperJS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    AOS.init();
 
     // Initialize Swiper
     var swiper = new Swiper(".mySwiper", {

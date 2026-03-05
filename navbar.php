@@ -1,6 +1,15 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']);
 
+// Fix for sub-pages to show active background on parent menu
+if (strpos($current_page, 'iot-faculty-member') !== false || strpos($current_page, 'physics-faculty-member') !== false) {
+    $current_page = 'faculty.php';
+} else if (strpos($current_page, 'about-') !== false) {
+    $current_page = 'about.php';
+} else if (strpos($current_page, 'cybersecurity-') !== false || strpos($current_page, 'performance-') !== false) {
+    $current_page = 'performance.php';
+}
+
 $nav_items = [
     'index.php' => 'Home',
     'about.php' => 'About',
@@ -8,7 +17,7 @@ $nav_items = [
     'admission.php' => 'Admission',
     'contact.php' => 'Contact',
     'faculty.php' => 'Faculty',
-    'performance.php' => 'Performance'
+    'performance.php' => 'Performance',
 ];
 
 // Classes for Desktop

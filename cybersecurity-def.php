@@ -5,15 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>
-    Definition of Cybersecurity Laboratory - Department of IoT and Information
-    Engineering
-  </title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Tailwind CSS v4 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- FontAwesome for Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-</head>
+    <!DOCTYPE html>
+    <html lang="th" class="scroll-smooth">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+        Definition of Cybersecurity Laboratory - Department of IoT and Information
+        Engineering
+      </title>
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- Tailwind CSS v4 CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!-- FontAwesome for Icons -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+      <!-- AOS -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
 
 <body class="radial-bg text-gray-200">
   <!-- Top Info Bar -->
@@ -25,14 +34,26 @@
     <div class="flex flex-wrap justify-center gap-4">
       <span class="text-[14px]"><i class="fa-solid fa-location-dot mr-1 text-orange-500"></i> E-12
         buildind</span>
-      <span class="text-[14px]">
-        <h1 class="text-2xl md:text-3xl font-bold text-white drop-shadow-md tracking-wider">
-          Definition of Cybersecurity Laboratory
-        </h1>
+      <span class="text-[14px]"><i class="fa-solid fa-envelope mr-1 text-orange-500"></i>
+        iot@kmitl.ac.th</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <?php include 'navbar.php'; ?>
+
+  <!-- Main Content -->
+  <main class="w-full pb-24 min-h-[70vh] flex flex-col items-center">
+    <!-- Top Banner Full Width -->
+    <div 
+      class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-10">
+      <h1 class="text-xl md:text-3xl font-bold text-white drop-shadow-md tracking-wider px-4">
+        Definition of Cybersecurity Laboratory
+      </h1>
     </div>
 
     <div class="max-w-5xl w-full px-4 md:px-8">
-      <div
+      <div data-aos="fade-up" data-aos-duration="800"
         class="w-full bg-[#0a0502]/80 backdrop-blur-sm border border-orange-500/50 rounded-xl p-8 md:p-12 shadow-[0_0_25px_rgba(234,88,12,0.15)] relative">
         <h2 class="text-xl md:text-2xl font-bold text-white mb-8">
           Definition of Lab Security
@@ -89,23 +110,23 @@
         </div>
 
         <div class="flex justify-center mt-16 pb-4">
-          <a href="performance.html"
+          <a href="performance.php"
             class="flex items-center justify-center w-12 h-12 bg-orange-600 hover:bg-orange-500 text-white rounded-full shadow-[0_0_15px_rgba(234,88,12,0.5)] hover:shadow-[0_0_20px_rgba(234,88,12,0.8)] transition-all hover:-translate-y-1">
             <i class="fa-solid fa-chevron-left text-xl font-bold pr-1"></i>
           </a>
         </div>
       </div>
     </div>
-    </main>
+  </main>
 
-    <!-- Footer Area -->
-    <?php include 'footer.php'; ?>
+  <!-- Footer Area -->
+  <?php include 'footer.php'; ?>
 
+  <!-- Floating Action Button -->
+  <?php include 'floating-btn.php'; ?>
 
-    <script src="js/script.js"></script>
-    <!-- Floating Action Button -->
-    <?php include 'floating-btn.php'; ?>
-
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
 
 </html>

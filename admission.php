@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -33,7 +35,8 @@
   <!-- Main Content for Admission -->
   <main class="w-full pb-16 min-h-[50vh] flex flex-col items-center">
     <!-- Top Admission Banner Full Width -->
-    <div class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-12">
+    <div 
+      class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-12">
       <h1 class="text-xl md:text-3xl font-bold text-white drop-shadow-md tracking-widest uppercase">
         Admission
       </h1>
@@ -41,7 +44,7 @@
 
     <div class="max-w-4xl w-full px-4 sm:px-1 lg:px-2">
       <!-- TCAS 69 Calendar Section -->
-      <div class="mb-16 w-full mt-4">
+      <div data-aos="fade-up" data-aos-duration="1000" class="mb-16 w-full mt-4">
         <h2 class="text-2xl md:text-3xl font-bold text-orange-500 mb-6 text-center drop-shadow-md">
           <i class="fa-regular fa-calendar-days mr-3 text-white"></i> ปฏิทินรับสมัคร TCAS 69
         </h2>
@@ -84,7 +87,7 @@
       </div>
 
       <!-- 3 Icons Rows -->
-      <div
+      <div data-aos="fade-up" data-aos-duration="1000"
         class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-12 mb-16 bg-[#140b08] p-8 md:p-10 rounded-2xl border border-orange-500/20 shadow-2xl relative overflow-hidden">
         <!-- Decorative Background Glow -->
         <div
@@ -157,7 +160,7 @@
       </div>
 
       <!-- Course Introduction & Image Box -->
-      <div
+      <div data-aos="fade-up" data-aos-duration="1000"
         class="flex flex-col items-center justify-center md:flex-row w-full bg-[#25150e] rounded-2xl overflow-hidden shadow-2xl mb-16 border border-orange-900/40">
         <!-- Left Text -->
         <div
@@ -209,7 +212,7 @@
       </div>
 
       <!-- ROUND 1 PORTFOLIO SECTIONS -->
-      <details class="group w-full mb-8" open>
+      <details data-aos="fade-up" data-aos-duration="800" class="group w-full mb-8" open>
         <summary
           class="bg-[#d26b32] hover:bg-[#c26224] text-white font-bold text-sm md:text-base py-4 px-6 rounded-lg group-open:rounded-b-none border border-orange-600/50 flex items-center shadow-lg transition-all cursor-pointer list-none appearance-[none] outline-none focus:outline-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:rotate-180"></i>
@@ -496,7 +499,7 @@
       <!-- End Round 1 -->
 
       <!-- ROUND 2 QUOTA SECTIONS -->
-      <details class="group w-full mb-8">
+      <details data-aos="fade-up" data-aos-duration="800" class="group w-full mb-8">
         <summary
           class="bg-[#d26b32] hover:bg-[#c26224] text-white font-bold text-sm md:text-base py-4 px-6 rounded-lg group-open:rounded-b-none border border-orange-600/50 flex items-center shadow-lg transition-all cursor-pointer list-none appearance-[none] outline-none focus:outline-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:rotate-180"></i>
@@ -612,7 +615,7 @@
       <!-- End Round 2 -->
 
       <!-- ROUND 3 ADMISSION SECTIONS -->
-      <details class="group w-full mb-8">
+      <details data-aos="fade-up" data-aos-duration="800" class="group w-full mb-8">
         <summary
           class="bg-[#d26b32] hover:bg-[#c26224] text-white font-bold text-sm md:text-base py-4 px-6 rounded-lg group-open:rounded-b-none border border-orange-600/50 flex items-center shadow-lg transition-all cursor-pointer list-none appearance-[none] outline-none focus:outline-none">
           <i class="fa-solid fa-chevron-down mr-4 transition-transform duration-300 group-open:rotate-180"></i>
@@ -689,9 +692,11 @@
   <?php include 'footer.php'; ?>
 
 
-  <script src="js/script.js"></script>
   <!-- Floating Action Button -->
   <?php include 'floating-btn.php'; ?>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- FontAwesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="radial-bg text-gray-200">
@@ -33,7 +35,8 @@
   <!-- Main Content -->
   <main class="w-full pb-24 min-h-[70vh] flex flex-col items-center">
     <!-- Top Banner Full Width -->
-    <div class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-10">
+    <div 
+      class="w-full bg-orange-gradient py-4 text-center shadow-md mt-10 mb-10">
       <h1 class="text-xl md:text-3xl font-bold text-white drop-shadow-md tracking-wider px-4">
         Professor of Industrial Physics
       </h1>
@@ -42,13 +45,13 @@
     <div class="w-full max-w-6xl px-4 md:px-8 flex flex-col items-center">
       <!-- Section 1 -->
       <div class="w-full flex flex-col items-center mb-10">
-        <div
+        <div data-aos="fade-up" data-aos-duration="800"
           class="section-badge mb-10 md:mb-12 max-w-lg text-center w-full shadow-lg border border-orange-400/50 text-white tracking-wider text-base md:text-lg lg:text-xl py-3 font-extrabold"
           style="box-shadow: 0 0 20px rgba(234, 88, 12, 0.4); border-radius: 8px; background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);">
           คณาจารย์หลักสูตรฟิสิกส์อุตสาหกรรม
         </div>
         <div class="flex flex-wrap justify-center gap-6 md:gap-8 w-full max-w-6xl mx-auto px-4">
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -71,7 +74,7 @@
                 Damrongsak</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -94,7 +97,7 @@
                 Lekchauum</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -117,7 +120,7 @@
                 Somphonsane</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -140,7 +143,7 @@
                 Prof. Dr. S.Tipawan Khlayboonme</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -163,7 +166,7 @@
                 Sakulkalavek</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -186,7 +189,7 @@
                 Pichanan Teesetsopon</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -209,7 +212,7 @@
                 Kitiwan</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -232,7 +235,7 @@
                 Leelawattananon</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -255,7 +258,7 @@
                 Pipatsart</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -278,7 +281,7 @@
                 Buranasiri</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -301,7 +304,7 @@
                 Taengtang</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -324,7 +327,7 @@
                 Kamoldilok</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -347,7 +350,7 @@
                 Promros</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -370,7 +373,7 @@
                 Ruttanapun</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -393,7 +396,7 @@
                 Locharoenrat</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -416,7 +419,7 @@
                 Klongratog</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -439,7 +442,7 @@
                 Sukwisute</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -462,7 +465,7 @@
                 Ruttanasirawit</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -485,7 +488,7 @@
                 Srinuanjan</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -508,7 +511,7 @@
                 Yindeesuk</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -531,7 +534,7 @@
                 Somdock</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -554,7 +557,7 @@
                 Tannukij</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -577,7 +580,7 @@
                 Chalermpol Rudradawong</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -606,13 +609,13 @@
       <div class="divider-line w-full max-w-5xl mx-auto my-6 md:my-10 opacity-60"></div>
       <!-- Section 2 -->
       <div class="w-full flex flex-col items-center mb-10">
-        <div
+        <div data-aos="fade-up" data-aos-duration="800"
           class="section-badge mb-10 md:mb-12 max-w-lg text-center w-full shadow-lg border border-orange-400/50 text-white tracking-wider text-base md:text-lg lg:text-xl py-3 font-extrabold"
           style="box-shadow: 0 0 20px rgba(234, 88, 12, 0.4); border-radius: 8px; background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);">
           บุคลากรหลักสูตรฟิสิกส์อุตสาหกรรม
         </div>
         <div class="flex flex-wrap justify-center gap-6 md:gap-8 w-full max-w-6xl mx-auto px-4">
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -634,7 +637,7 @@
                 Silathanasan</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -656,7 +659,7 @@
                 Sornkot</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -678,7 +681,7 @@
                 Prakopphon</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -700,7 +703,7 @@
                 Kajornchaikul</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -722,7 +725,7 @@
                 Unsap</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -744,7 +747,7 @@
                 Sommut</span>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-duration="800"
             class="researcher-card w-48 sm:w-56 flex flex-col items-center group shadow-[0_4px_15px_rgba(234,88,12,0.15)] hover:shadow-[0_10px_25px_rgba(234,88,12,0.3)] bg-gradient-to-b from-black/80 to-[#1a0a04] hover:border-orange-500/80 transition-all duration-300">
             <div
               class="w-full aspect-[4/5] bg-black/60 overflow-hidden relative border-b-2 border-orange-600/50 flex justify-center items-center">
@@ -770,7 +773,7 @@
       </div>
       <!-- Back Button -->
       <div class="flex justify-center mt-20 pb-4">
-        <a href="faculty.html"
+        <a href="faculty.php"
           class="flex items-center justify-center w-12 h-12 bg-orange-600 hover:bg-orange-500 text-white rounded-full shadow-[0_0_15px_rgba(234,88,12,0.5)] hover:shadow-[0_0_20px_rgba(234,88,12,0.8)] transition-all hover:-translate-y-1">
           <i class="fa-solid fa-chevron-left text-xl font-bold pr-1"></i>
         </a>
@@ -781,11 +784,11 @@
   <!-- Footer Area -->
   <?php include 'footer.php'; ?>
 
+  <!-- Floating Action Button -->
+  <?php include 'floating-btn.php'; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
-    <!-- Floating Action Button -->
-    <?php include 'floating-btn.php'; ?>
-
-  </body>
+</body>
 
 </html>

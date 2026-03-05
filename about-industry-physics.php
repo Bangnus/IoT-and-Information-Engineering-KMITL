@@ -13,7 +13,10 @@
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
-    />  </head>
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
   <body class="radial-bg text-gray-200">
     <!-- Top Info Bar -->
     <div
@@ -41,28 +44,28 @@
     <main class="w-full py-16 min-h-[50vh]">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Page Title -->
-        <h1
+        <h1 data-aos="zoom-in" data-aos-duration="1000"
           class="text-3xl md:text-5xl font-bold text-white mb-12 drop-shadow-sm text-center"
         >
           ABOUT US
         </h1>
 
         <!-- 3 Tabs Navigation -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+        <div data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
           <a
-            href="about.html"
+            href="about.php"
             class="bg-black/60 text-gray-300 border border-orange-900/50 py-3 px-6 rounded text-center font-bold text-sm md:text-base hover:bg-orange-600 hover:text-white transition-colors"
           >
             ABOUT IoT System and Information
           </a>
           <a
-            href="about-dual-degree.html"
+            href="about-dual-degree.php"
             class="bg-black/60 text-gray-300 border border-orange-900/50 py-3 px-6 rounded text-center font-bold text-sm md:text-base hover:bg-orange-600 hover:text-white transition-colors"
           >
             ABOUT Dual Degree
           </a>
           <a
-            href="about-industry-physics.html"
+            href="about-industry-physics.php"
             class="bg-primary text-white py-3 px-6 rounded text-center font-bold text-sm md:text-base border border-orange-500 shadow-[0_0_15px_rgba(234,88,12,0.5)] cursor-default"
           >
             ABOUT Industry Physics
@@ -70,7 +73,7 @@
         </div>
 
         <!-- Section 1: Introduction Card -->
-        <div class="mb-16">
+        <div data-aos="fade-up" data-aos-duration="1000" class="mb-16">
           <div class="flex justify-center mb-6">
             <h2 class="text-xl md:text-2xl font-bold text-white">
               ทำไมต้องเรียน วท.บ. ฟิสิกส์อุตสาหกรรม ที่ สจล. ?
@@ -112,7 +115,7 @@
         </div>
 
         <!-- Section 2: Career Opportunities -->
-        <div class="mb-16">
+        <div data-aos="flip-up" data-aos-duration="1000" class="mb-16">
           <div
             class="border border-orange-900/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.5)] bg-black/40 backdrop-blur-sm flex flex-col md:flex-row"
           >
@@ -157,7 +160,7 @@
         </div>
 
         <!-- Section 3: History / Background -->
-        <div class="mb-16">
+        <div data-aos="fade-up" data-aos-duration="1000" class="mb-16">
           <div class="flex justify-center mb-6">
             <div
               class="bg-orange-gradient py-3 px-10 rounded-full shadow-lg border border-orange-500/30"
@@ -270,6 +273,7 @@
     <?php include 'footer.php'; ?>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
       <!-- Floating Action Button -->
     <?php include 'floating-btn.php'; ?>
