@@ -71,43 +71,43 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Initializing Global Search...");
 
   const searchMap = {
-    iot: "academic.php",
-    ไอโอที: "academic.php",
-    วิศวกรรมไอโอที: "academic.php",
-    วิศวะไอโอที: "academic.php",
-    อาจารย์: "faculty.php",
-    ครู: "faculty.php",
-    บุคลากร: "faculty.php",
-    บุคลากรสายสนับสนุน: "faculty.php",
-    faculty: "faculty.php",
-    รับสมัคร: "admission.php",
-    admission: "admission.php",
-    tcas: "admission.php",
-    พอร์ต: "admission.php",
-    ค่าเทอม: "admission.php",
-    ติดต่อ: "contact.php",
-    contact: "contact.php",
-    ที่อยู่: "contact.php",
-    เบอร์: "contact.php",
-    โทร: "contact.php",
-    ผลงาน: "performance.php",
-    performance: "performance.php",
-    ความสำเร็จ: "performance.php",
-    วิจัย: "performance.php",
-    หลักสูตร: "academic.php",
-    academic: "academic.php",
-    วิชา: "academic.php",
-    เรียน: "academic.php",
-    ฟิสิกส์: "physics-faculty-member.php",
-    physics: "physics-faculty-member.php",
-    อุตสาหกรรม: "about-industry-physics.php",
-    ไซเบอร์: "cybersecurity-def.php",
-    cybersecurity: "cybersecurity-def.php",
-    cyber: "cybersecurity-def.php",
-    สองปริญญา: "about-dual-degree.php",
-    ปริญญาคู่: "about-dual-degree.php",
-    dual: "about-dual-degree.php",
-    ควบ: "about-dual-degree.php",
+    iot: "academic",
+    ไอโอที: "academic",
+    วิศวกรรมไอโอที: "academic",
+    วิศวะไอโอที: "academic",
+    อาจารย์: "faculty",
+    ครู: "faculty",
+    บุคลากร: "faculty",
+    บุคลากรสายสนับสนุน: "faculty",
+    faculty: "faculty",
+    รับสมัคร: "admission",
+    admission: "admission",
+    tcas: "admission",
+    พอร์ต: "admission",
+    ค่าเทอม: "admission",
+    ติดต่อ: "contact",
+    contact: "contact",
+    ที่อยู่: "contact",
+    เบอร์: "contact",
+    โทร: "contact",
+    ผลงาน: "performance",
+    performance: "performance",
+    ความสำเร็จ: "performance",
+    วิจัย: "performance",
+    หลักสูตร: "academic",
+    academic: "academic",
+    วิชา: "academic",
+    เรียน: "academic",
+    ฟิสิกส์: "physics-faculty-member",
+    physics: "physics-faculty-member",
+    อุตสาหกรรม: "about-industry-physics",
+    ไซเบอร์: "cybersecurity-def",
+    cybersecurity: "cybersecurity-def",
+    cyber: "cybersecurity-def",
+    สองปริญญา: "about-dual-degree",
+    ปริญญาคู่: "about-dual-degree",
+    dual: "about-dual-degree",
+    ควบ: "about-dual-degree",
   };
 
   function performSearch(query) {
@@ -116,16 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const qLower = query.toLowerCase().trim();
 
+    // Determine current extension (.php or .html)
+    const isPhp = window.location.pathname.endsWith(".php");
+    const extension = isPhp ? ".php" : ".html";
+
     // 1. Try routing to a specific targeted page using keyword mapping
     let shouldRedirect = false;
-    for (const [keyword, url] of Object.entries(searchMap)) {
+    for (const [keyword, pageName] of Object.entries(searchMap)) {
       if (qLower.includes(keyword) || keyword.includes(qLower)) {
-        if (!window.location.pathname.endsWith(url)) {
-          console.log("Routing to:", url);
-          window.location.href = url;
+        const targetUrl = pageName + extension;
+        if (!window.location.pathname.endsWith(targetUrl)) {
+          console.log("Routing to:", targetUrl);
+          window.location.href = targetUrl;
           return; // Stop execution to redirect
         } else {
-          console.log("Already on mapped page:", url);
+          console.log("Already on mapped page:", targetUrl);
           shouldRedirect = true; // Still allow window.find to run since we are on the correct page
           break;
         }
@@ -144,7 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Fallback: Ask the AI Chatbot only if we didn't just route somewhere
     if (!shouldRedirect) {
       console.log("No match found, redirecting to chatbot");
-      window.location.href = "chat.php?q=" + encodeURIComponent(query);
+      window.location.href =
+        "chat" + extension + "?q=" + encodeURIComponent(query);
     }
   }
 
