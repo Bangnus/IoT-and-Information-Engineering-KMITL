@@ -48,7 +48,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   try {
-    const response = await fetch("iot_dataset_gemini-2.5-flash_5000_real.json");
+    // Dynamically handle GitHub pages subdirectory
+    const basePath = window.location.pathname.substring(
+      0,
+      window.location.pathname.lastIndexOf("/")
+    );
+    const fetchPath = `${basePath}/iot_dataset_gemini-2.5-flash_5000_real.json`;
+
+    const response = await fetch(fetchPath);
     if (response.ok) {
       dataset = await response.json();
 
