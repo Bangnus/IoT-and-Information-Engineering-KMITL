@@ -8,6 +8,8 @@ if (strpos($current_page, 'iot-faculty-member') !== false || strpos($current_pag
     $current_page = 'about.php';
 } else if (strpos($current_page, 'cybersecurity-') !== false || strpos($current_page, 'performance-') !== false) {
     $current_page = 'performance.php';
+} else if (strpos($current_page, 'measurement-multimeter') !== false || strpos($current_page, 'automatic-blending-machine') !== false) {
+    $current_page = 'index.php';
 }
 
 $nav_items = [
