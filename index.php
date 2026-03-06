@@ -268,7 +268,7 @@
             อุปกรณ์วัดค่าที่สามารถวัดค่าได้หลากหลาย
             ตั้งแต่อุณหภูมิไปจนถึงปริมาณแก๊ส LPG ในรูปแบบที่ไม่เหมือนใคร
           </p>
-          <a href="measurement-multimeter.html"
+          <a href="measurement-multimeter.php"
             class="bg-gray-200 text-black px-8 py-2 md:py-2.5 text-xs md:text-sm font-bold rounded-md hover:bg-white hover:shadow-lg hover:scale-105 transition-all w-max cursor-pointer">
             READ MORE
           </a>
@@ -288,7 +288,7 @@
           <p class="text-sm text-gray-300 md:text-gray-200 mb-5 md:mb-6 px-2 md:px-6 line-clamp-3 md:line-clamp-2">
             เมื่อเครื่องดื่มของคุณ จะคงความอร่อยได้ทุกครั้งทุกที่ทุกเวลา
           </p>
-          <a href="automatic-blending-machine.html"
+          <a href="automatic-blending-machine.php"
             class="bg-gray-200 text-black px-8 py-2 md:py-2.5 text-xs md:text-sm font-bold rounded-md hover:bg-white hover:shadow-lg hover:scale-105 transition-all w-max cursor-pointer">
             READ MORE
           </a>
